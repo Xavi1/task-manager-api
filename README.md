@@ -12,7 +12,7 @@ A simple **Task Manager API** built with **Node.js** and **Express.js** to handl
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/task-manager-api.git
+   git clone https://github.com/Xavi1/task-manager-api
    cd task-manager-api
    ```
 
