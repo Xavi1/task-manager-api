@@ -32,12 +32,11 @@ A simple **Task Manager API** built with **Node.js** and **Express.js** to handl
 ### 1️⃣ Get All Tasks
 ```http
 GET /tasks
+
 ```
 📌 **Response:**
 ```json
-[
-  {"id": 1, "title": "Learn Node.js", "completed": false}
-]
+[]
 ```
 
 ---
@@ -49,13 +48,13 @@ POST /tasks
 📌 **Request Body (JSON):**
 ```json
 {
-  "title": "Learn Node.js"
+  "title": "Start New Task"
 }
 ```
 📌 **Response:**
 ```json
 {
-  "id": 1, "title": "Learn Node.js", "completed": false
+  "id": 1, "title": "Start New Task", "completed": false
 }
 ```
 
@@ -74,7 +73,7 @@ PUT /tasks/:id
 📌 **Response:**
 ```json
 {
-  "id": 1, "title": "Learn Node.js", "completed": true
+  "id": 1, "title": "Start New Task", "completed": true
 }
 ```
 
@@ -98,7 +97,7 @@ curl -X GET http://localhost:3000/tasks
 ```
 ### Create a Task
 ```cmd
-curl -X POST http://localhost:3000/tasks -H "Content-Type: application/json" -d "{\"title\":\"Learn Node.js\"}"
+curl -X POST http://localhost:3000/tasks -H "Content-Type: application/json" -d "{\"title\":\"Start New Task\"}"
 ```
 ### Update a Task
 ```cmd
